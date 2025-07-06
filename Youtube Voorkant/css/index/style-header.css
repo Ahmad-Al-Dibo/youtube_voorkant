@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px; /* padding : y x ;  y = - and + x = - and + ( dat betekent van boven en van onder ,van right en van left  */
+
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* cursor : het vorm van het muis , cursor is een function om het muis vorm te veranderen als het op die class staat */
+
+}
+
+.left-section img{
+    width: 46%;
+    padding-left: 16px; /* padding-left is een function om het left te bewegen  */
+    
+
+}
+
+.mid-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+    margin-left: -9%; /* voor het bewegen van recht en links  */
+
+}
+
+
+.mid-section form{
+    display: flex;
+    height: 40px;
+    width: 628px;
+}
+
+.mid-section input {
+    width: 100%;
+    border-radius: 50px 0 0 50px; /*  border-radius:boven rechts , boven links , onder rechts , onder links , ; */
+
+    padding: 12px;/* als je een value in de padding geeft dan geeft het aan alle kanten ! */
+
+    font-size: 1.6 rem ; /* 1.6 rem = 1.6 × html = html = font-size = 10px : ( 10 × 1.6 ) */
+
+    border: 1px solid #d3d3d3; /* het groote , het soort , het kleur */ 
+    border-right: None;
+    cursor:grab;
+
+}
+
+
+.mid-section button{
+    width: 64px;
+    border: 1px solid #d3d3d3;
+    border-radius: 0 2px 2px 0 ;
+    padding-top: 4px; /* om het vorm in het button van boven bewegen */
+    background-color: #fbfbfb;
+    
+}
+
+.mid-section button:hover{ /* button:hover ; betekent dit function uitvoeren als de muis is op de button staat of hovered  */
+    border-color: #c6c6c6;
+    background-color: #f0f0f0;
+    cursor: pointer;
+
+}
+
+.mid-section .mic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.right-section a{
+    padding-right: 18px ;
+    text-decoration: None;
+    color: black;
+
+}
+
